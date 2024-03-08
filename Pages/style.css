@@ -1,0 +1,451 @@
+body{
+    background-color:black;
+    color:red;
+    background-image: url(./Images/beastornothing.jpeg);
+    background-size: 220vh;
+    background-repeat: no-repeat;
+    
+}
+
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+    
+}
+
+
+html::-webkit-scrollbar-thumb {
+    width: 0.5rem;
+    background: #fff;
+
+    
+}
+
+.logo {
+    width: 10%;
+}
+
+
+
+.imglogo{
+    width: 200%;
+    margin-top: -5rem;
+    margin-left: -30%;
+}
+
+header .shadow{
+    box-shadow: 2px 4px 20px rgb(15 54 55 / 20%);
+    transition: 0.5s ease;
+
+
+}
+
+
+nav{
+    margin-top: 5rem;
+    position: absolute;
+}
+
+
+
+.navbar{
+    display:flex;
+    margin-left: 30%;
+    margin-top: -10%;
+    list-style-type: none;
+    column-gap: 30px;
+    list-style-type:none ;
+}
+
+
+
+.liste {
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+            
+}
+
+
+.link{
+    
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10%;
+    font-weight: bold;
+    margin-top: -20%;
+       
+ 
+}
+
+
+.link a{
+    text-decoration: 0;
+    color: #fff;
+
+}
+
+
+
+/* .link a:hover{
+    border-radius: 2px;
+    border: 1px solid #fff;
+} */
+
+
+
+.link :hover , .link .active{
+    transform: scale(1.02);
+    transition: 3ms;
+    border-bottom: 3px solid;
+    color:red;
+
+ 
+}
+
+#search{
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+
+#search .box-search{
+   display: flex;
+   padding: 20%;
+   margin-right: 20%; 
+
+}
+
+.box-search input{
+    width: 800%;
+    font-size: 100%;
+    margin-right: 200%;
+
+}
+
+
+img{
+    margin: 0px;
+    display: inline-block;    
+    vertical-align: middle;
+    height: auto;
+    cursor: pointer;
+       
+}
+
+
+img:hover{
+    transition: 2ms;
+    transform: scale(1.05);
+    
+}
+
+#Apropos .grid-wrapper .btn:hover{
+    transition: 2ms;
+    transform: scale(1.05);
+    
+}
+
+
+#Apropos .grid-wrapper .btn{
+    padding: 10px 20px;
+    background: red;
+    color:black;
+    font-weight:800;
+    border: red;
+    margin-left: 50%;
+    margin-bottom: 90%;
+    margin-top: -100%;
+    
+}
+
+
+#Apropos .grid-wrapper .text h1{
+    font-weight:800;
+    margin: 25%;
+    margin-left: 20%;
+    text-indent: 1%;
+    border: red;
+    margin-top: 10%;
+    text-align: end;
+    
+    
+}
+
+
+.cars-container{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    
+}
+
+
+
+.cars-container .Box{
+    flex: 1 1 30rem;
+    position: relative;
+    height: 500px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    
+}
+
+
+.cars-container .Box img{
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    overflow: hidden;  
+
+}
+
+
+.cars-container .Box img:hover{
+    transition: 2ms;
+    transform: scale(1.1);
+     
+
+}
+
+
+.cars-container .Box h2{
+   
+    background: #fff;
+    padding: 8px;
+    border-radius: 0.5rem;
+}
+
+.cars-container .Box:hover h2{
+      background: red;
+      color: black;
+}
+
+
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-top: 2rem;
+
+}
+
+
+
+.services-container .box{
+    flex: 1 1 17rem;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.services-container .box img{
+    width: 100%;
+    height: 200px;
+    object-fit:contain;
+    object-position: center;
+    margin-bottom:  1rem;
+
+}
+
+
+.services-container .box h3{
+    font-size: 1.1em;
+    font-weight: 500;
+    left: 5%;
+}
+
+
+.services-container .box span{
+    font-size: 1.1em;
+    font-weight: 500;
+    color:#fff ;
+}
+
+
+.services-container .box .bx{
+    color:#fff ;
+    margin:0.8rem 0;
+
+}
+
+
+.services-container .box .btn{
+    max-width: 120px;
+    text-decoration: none;
+    color:#fff ;
+    border: 10%;
+    background:red;
+    background-size:1px ;
+    border-bottom: red;
+
+}
+
+
+.services-container .box .btn:hover{
+    color:#fff ;
+    transition: 5ms;
+    transform: scale(1.05);
+}
+
+
+.services-container .box .details{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 1.8rem;
+    right: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+
+.services-container .box details:hover{
+    color: #fff;
+    text-decoration: underline;   
+}
+
+
+.EspaceClient-container .form{ 
+    display: block;
+    margin-left: 0px;
+    text-align: center;
+}
+
+
+.EspaceClient-container .boite{
+    text-align: center;
+    border-radius: 10x;
+
+}
+
+
+.EspaceClient-container .boite input{
+    border-radius: 10x;
+    display:flex;
+    margin-left:40%;
+    padding:5px;
+    transition:all 0.5s ease;
+
+}
+
+
+.EspaceClient-container .form .boite .connect button{
+    background-color: red;
+    display: flex;
+    padding: 5px;
+
+
+}
+
+
+.EspaceClient-container .paragraphe{
+   text-align: center;
+    
+}
+
+
+.EspaceClient-container .button{
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+
+.EspaceClient-container .button a{
+    text-decoration: none;
+    border: #fff;
+    color: #fff;
+    background: red;
+    background-size: 1px;
+    border-bottom: red;    
+    
+}
+
+
+.EspaceClient-container .inscription .users-form-px-md-5-px-2{
+    display: flex;
+    flex-wrap:wrap;
+    margin-left: 40%;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.EspaceClient-container .inscription .users-form-px-md-5-px-2 .form-control {
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    margin:5px;
+    
+    
+}
+
+footer{
+    background:red;
+    color:#fff;
+    border-top:2px solid ;
+     
+}
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    gap: 1rem;
+}
+
+.footer-container .py-3-my-4 {
+    margin-bottom: 1rem;
+    flex-direction:column;
+}
+
+.footer-container .nav-justify-content-center-border-bottom-pb-3-mb-3{
+    display: flex;
+    text-decoration:none;
+    list-style-type: none;
+}
+
+.footer-container .nav-justify-content-center-border-bottom-pb-3-mb-3 a{
+    text-decoration:none;
+    list-style-type: none;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    margin: 5px;
+
+}
+
+
+
+@media (max-width: 1080px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+  
+@media (max-width: 991px){
+    .nav {
+        padding: 15px 20px;
+    }
+
+    section{
+        padding: 3rem 0 1rem;
+    }
+
+}
+@media (max-width: 991px){
+    #serch{
+        background: red;
+    }
+
+
+}
