@@ -30,7 +30,7 @@
             <div class="navigbar">
                 <nav  class="navbar">
                     
-                    <ul class="liste" class="liste">
+                    <ul class="liste">
                     <li class="link">
                      <a href="" target="_self" class="active">Acceuil</a>
                     </li>
@@ -59,12 +59,10 @@
                      
                       <!--search icon-->
                     <i class="bx bx-search" id="search"></i>
-                     <div class="box-search container">
+                     <div class="box-search-container">
                           <!--search box-->
                             <input type="text" id="button-search" name="search" placeholder="rechercher">
                 </ul>
-
-                     </div>
                    
             </nav>           
         </div>
@@ -86,9 +84,8 @@
                         Une agence comme <span>LUXCAR</span> vous n'en trouverai pas deux
                         
                     </h1>  
-
-                    <img src="" alt="">
-                     <button class="btn"  onclick="Decouvrir()" >
+ 
+                     <button class="btn" onclick="showSignupForm()">
                                 Decouvrir
                      </button>
             </div>
@@ -164,7 +161,7 @@
                                 <span>$120.99</span>
                                 <i class="bx bxs-star"></i>
                                 <a href="#EspaceClient" class="btn">Louer</a>
-                                <a href="#" class="details">Voir details</details></a>
+                                <a href="#" class="details">Voir details</a>
         
                         </div>
 
@@ -197,65 +194,33 @@
         <section class="EspaceClient" id="EspaceClient">
             <div class="EspaceClient-container">
                 <!--formulaire de connexion-->
-                <form action="remplissage" ></form>
-
-                            <div class="form">
-                                <br>
-                                <div class="Connecter">
-                                    <h1>CONNEXION</h1>
-                                     <p>Renseignez votre email ou numero de telephone et mot de passe</p>
-
-                                </div>
-                                
-                                <br><div class="boite">
-                            
-                                <input type="email" placeholder="Telephone ou email">
-
-                            </div>
-                            
-                            <br><div class="boite">
-                    
-                                <input type="password" placeholder="Mot de passe">
-
-                            </div>
-
-                            <div class="connect">
-                                <button>connexion</button>
-                            </div>
-                            
-
-                            <div>
-                                <p>Mot de passe oublie ?</p>
-                            </div>
-
-                            <div class="inscription">
-                                <p>Rejoignez-nous <a href="">Creer un compte</a></p>
-                                    <h1 class="title-login" style="font-size: 1.4rem; margin-bottom: 30px;">Inscription</h1>
-                                    <div class="users-form-px-md-5-px-2">
-                                    <form method="post" accept-charset="utf-8" action="/inscription"><div style="display:none;"><input type="hidden" name="_method" value="POST"><input type="hidden" name="_csrfToken" autocomplete="off" value="5f4823d28fc911ecd11bc62c224c17aab969ef4b5cc2cc2dc79a0571ff00d597a23ae7f6a175065c7ff4f92001391b0ec84639d4062d1d9c99ee3f96aafd52aa"></div> <div class="input-container mb-4 text required">
-                                    <select name="gender" id="gender" class="form-control" style="background-color: #191919; border-color: 1px solid #ffffff; color: #FFFFFF;" required="">
-                                    <option value="">Choisir le type de compte</option>
-                                    <option value="0">Personne physique</option>
-                                    <option value="1">Entreprise</option>
-                                    </select>
-                                    </div>
-                                    <div class="input-container mb-4 text required"><input type="text" name="first_name" placeholder="Prénom" required="required" autocomplete="off" maxlength="50" id="first-name"><div class="bar"></div></div> <div id="last_n">
-                                    <div class="input-container mb-4 text required"><input type="text" name="last_name" placeholder="Nom" required="required" autocomplete="off" maxlength="50" id="last-name"><div class="bar"></div></div> </div>
-                                    <div class="input-container mb-4 email required"><input type="email" name="email" placeholder="Email" required="required" autocomplete="off" maxlength="255" id="email"><div class="bar"></div></div>
-                                    <div class="">
-                                    <select name="countryCode" class="form-control" id="" style="    background-color: #191919; border-color: 1px solid #ffffff; color: #FFFFFF;">
-
-                            </div>
-                            <hr>
-
-                            <br><textarea name="Commentaire" id="" cols="30" rows="10" placeholder="Commentaire"></textarea>
-                        
-
-                            </div>
-                           
+                
+        <!-- Formulaire d'inscription -->
+        <div id="signupForm" style="display: none;">
+           <section class="signup container" id="Inscription">
+              <div class="signup-content">
+                 <h2>Inscrivez-vous pour plus d'informations</h2>
+                    <form action="votre_script_de_traitement.php" method="POST">
+                       <div class="form-group">
+                            <label for="nom">Nom:</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                         <div class="form-group">
+                           <label for="telephone">Téléphone:</label>
+                           <input type="tel" id="telephone" name="telephone">
+                         </div>
+                          <button type="submit" class="btn" >S'inscrire</button>
+                       </form>
             </div>
-
         </section>
+    </div>
+
+       <!-- Footer, scripts, et autres éléments de fin de page vont ici -->
+
 
         <!--section contact -->
 
@@ -263,9 +228,9 @@
             <div>
                     <span>Nous sommes joignable sur ces numeros</span>
                     <div>
-                        774898434 <i class='whatsapp' type='logo' ></i>
+                        774898434 <span>﷐phone﷯</span></i>
                         <br>
-                        778945637 
+                        778945637
                     </div>
 
             </div>
@@ -287,8 +252,11 @@
               </div>
              
               
-        </footer>
-        <!--link to js-->
-        <script src="script.js"></script>
+        </footer> 
+
+        <!-- Le script pour afficher le formulaire d'inscription -->
+    <script src="script.js">
+       
+    </script>
 </body>
 </html>

@@ -76,7 +76,7 @@ nav{
     font-weight: bold;
     margin-top: -20%;
        
- 
+    
 }
 
 
@@ -84,8 +84,8 @@ nav{
     text-decoration: 0;
     color: #fff;
 
-}
 
+}
 
 
 /* .link a:hover{
@@ -101,26 +101,24 @@ nav{
     border-bottom: 3px solid;
     color:red;
 
- 
 }
 
 #search{
     font-size: 24px;
     cursor: pointer;
-    
+    margin-top: -20%; 
+    margin-right:5%;
+
+     
 }
 
-#search .box-search{
-   display: flex;
-   padding: 20%;
-   margin-right: 20%; 
-
-}
-
-.box-search input{
-    width: 800%;
-    font-size: 100%;
-    margin-right: 200%;
+.box-search-container input{
+   width: 500%;
+   padding: 5px;
+   margin-top: -800%;
+   display: none;
+   margin-left: -12%; 
+   
 
 }
 
@@ -164,13 +162,9 @@ img:hover{
 #Apropos .grid-wrapper .text h1{
     font-weight:800;
     margin: 25%;
-    margin-left: 20%;
-    text-indent: 1%;
-    border: red;
-    margin-top: 10%;
-    text-align: end;
-    
-    
+    display: flex;
+    flex-direction: column;
+        
 }
 
 
@@ -181,7 +175,6 @@ img:hover{
     margin-top: 2rem;
     
 }
-
 
 
 .cars-container .Box{
@@ -207,7 +200,6 @@ img:hover{
     transition: 2ms;
     transform: scale(1.1);
      
-
 }
 
 
@@ -222,7 +214,6 @@ img:hover{
       background: red;
       color: black;
 }
-
 
 
 .services-container{
@@ -253,6 +244,7 @@ img:hover{
     margin-bottom:  1rem;
 
 }
+
 
 
 .services-container .box h3{
@@ -315,6 +307,7 @@ img:hover{
 }
 
 
+
 .EspaceClient-container .form{ 
     display: block;
     margin-left: 0px;
@@ -335,22 +328,26 @@ img:hover{
     margin-left:40%;
     padding:5px;
     transition:all 0.5s ease;
+    border-radius: 5%;
 
 }
 
 
-.EspaceClient-container .form .boite .connect button{
+.EspaceClient-container .form .connect button{
     background-color: red;
     display: flex;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 10%;
+    margin-left: 45%;
+    margin-top: 2%;
 
-
+    
 }
 
 
 .EspaceClient-container .paragraphe{
    text-align: center;
-    
+
 }
 
 
@@ -361,13 +358,16 @@ img:hover{
 }
 
 
-.EspaceClient-container .button a{
+.EspaceClient-container  a{
     text-decoration: none;
     border: #fff;
     color: #fff;
     background: red;
     background-size: 1px;
-    border-bottom: red;    
+    border-bottom: red;
+    padding: 1%;
+    border-radius: 1%;
+
     
 }
 
@@ -381,19 +381,96 @@ img:hover{
     
 }
 
+
+.EspaceClient-container .inscription .users-form-px-md-5-px-2 .input-container-mb-4-text-required {
+    display: flex;
+    flex-wrap:wrap;
+    margin-left: 1%;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.EspaceClient-container  .inscription .users-form-px-md-5-px-2 .input-container-mb-4-text-required  .input-container-mb-4-text-required{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.EspaceClient-container .inscription  .users-form-px-md-5-px-2 .input-container-mb-4-text-required  .input-container-mb-4-email-required{
+    display: flex;
+    padding: 2%;
+       
+
+}
+
+.EspaceClient-container .inscription .users-form-px-md-5-px-2 .input-container-mb-4-text-required  .input-containermb-4-text-required{
+    display: flex;
+    margin: 10%;    
+
+
+}
+
+
 .EspaceClient-container .inscription .users-form-px-md-5-px-2 .form-control {
     display: flex;
     padding: 5px;
     border-radius: 5px;
     margin:5px;
+
     
     
 }
 
+
+.signup-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.signup-content h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color:red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: red;
+}
+
+
+
+
 footer{
     background:red;
     color:#fff;
-    border-top:2px solid ;
+    border-top:2px solid;
+    
      
 }
 .footer-container{
@@ -411,6 +488,7 @@ footer{
     display: flex;
     text-decoration:none;
     list-style-type: none;
+    
 }
 
 .footer-container .nav-justify-content-center-border-bottom-pb-3-mb-3 a{
@@ -420,9 +498,8 @@ footer{
     color: #fff;
     flex-direction: column;
     margin: 5px;
-
+    
 }
-
 
 
 @media (max-width: 1080px){
@@ -443,7 +520,7 @@ footer{
 
 }
 @media (max-width: 991px){
-    #serch{
+    #search{
         background: red;
     }
 
